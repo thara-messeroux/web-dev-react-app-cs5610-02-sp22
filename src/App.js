@@ -3,55 +3,38 @@ import './vendors/bootstrap/bootswatch/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './App.css';
 import Labs from "./components/Labs";
-import Hello from "./components/Hello";
-import Tuiter from "./components/tuiter";
-import {BrowserRouter} from "react-router-dom";
-
-
-// import {Component} from "react";
-//
-// class Tuiter extends Component {
-//   render() {
-//     return null;
-//   }
-// }
+import HelloWorld from "./components/HelloWorld";
+import Tuiter from "./components/Tuiter";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
   return (
-      <BrowserRouter>
-      <div className="container">
-        <Hello/>
-        <Labs/>
-        <Tuiter/>
-      </div>
-        <BrowserRouter>
+        // Video 48:00
+
+        <div className="container">
+
+          <BrowserRouter>
+          <Routes>
+            <Route path="/HelloWorld" exact element={<HelloWorld/>}/>
+            <Route path="/Labs" exact element={<Labs/>}/>
+            <Route path="/" exact element={<Labs/>}/>
+            <Route path="/Tuiter" exact element={<Tuiter/>}/>
+
+          </Routes>
+
+
+          </BrowserRouter>
+
+            {/*<Labs/>*/}
+            {/*<HelloWorld/>*/}
+            {/*<Tuiter/>*/}
+          {/*<Route path="/labs">*/}
+          {/*  <Labs/>*/}
+          {/*</Route>*/}
+          {/*<Route path="/tuiter">*/}
+          {/*  <Tuiter/>*/}
+          {/*</Route>*/}
+        </div>
   );
 }
 export default App;
-
-
-// import logo from './logo.svg';
-// import './App.css';
-//
-// function App() {
-//   return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <p>
-//             Edit <code>src/App.js</code> and save to reload.
-//           </p>
-//           <a
-//               className="App-link"
-//               href="https://reactjs.org"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//           >
-//             Learn React
-//           </a>
-//         </header>
-//       </div>
-//   );
-// }
-//
-// export default App;
