@@ -4,7 +4,7 @@ import './vendors/fontawesome/css/all.min.css';
 import './App.css';
 import Labs from "./components/Labs";
 import HelloWorld from "./components/HelloWorld";
-import Tuiter from "./components/Tuiter";
+import Tuiter from "./components/Tuiter/index.js";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
 
           <BrowserRouter>
           <Routes>
-            <Route path="/HelloWorld" exact element={<HelloWorld/>}/>
-            <Route path="/Labs" exact element={<Labs/>}/>
+            <Route path="/hello" exact element={<HelloWorld/>}/>
+            <Route path="/labs" exact element={<Labs/>}/>
             <Route path="/" exact element={<Labs/>}/>
-            <Route path="/Tuiter" exact element={<Tuiter/>}/>
+            <Route path="/tuiter" exact element={<Tuiter/>}/>
 
           </Routes>
 
