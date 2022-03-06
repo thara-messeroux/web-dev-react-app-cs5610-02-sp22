@@ -1,40 +1,26 @@
-import './vendors/bootstrap/css/bootstrap.min.css';
-import './vendors/bootstrap/bootswatch/bootstrap.min.css';
-import './vendors/fontawesome/css/all.min.css';
-import './App.css';
-import Labs from "./components/Labs";
-import HelloWorld from "./components/HelloWorld";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import "./App.css";
+// import HelloWorld from "./components/HelloWorld";
+import Labs from "./components/Labs/index.js";
+import HomeScreen from './components/Tuiter/HomeScreen/HomeScreen.js';
 import Tuiter from "./components/Tuiter/index.js";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import "./vendors/bootstrap/css/bootstrap.min.css";
+import "./vendors/fontawesome/css/all.min.css";
 
 function App() {
   return (
-        // Video 48:00
-
-        <div className="container">
-
-          <BrowserRouter>
-          <Routes>
-            <Route path="/hello" exact element={<HelloWorld/>}/>
-            <Route path="/labs" exact element={<Labs/>}/>
-            <Route path="/" exact element={<Labs/>}/>
-            <Route path="/tuiter" exact element={<Tuiter/>}/>
-
-          </Routes>
-
-
-          </BrowserRouter>
-
-            {/*<Labs/>*/}
-            {/*<HelloWorld/>*/}
-            {/*<Tuiter/>*/}
-          {/*<Route path="/labs">*/}
-          {/*  <Labs/>*/}
-          {/*</Route>*/}
-          {/*<Route path="/tuiter">*/}
-          {/*  <Tuiter/>*/}
-          {/*</Route>*/}
-        </div>
+    <BrowserRouter>
+      <div className="container">
+        <header/>
+        <Routes>
+          <Route path="/" element={<Labs />} />
+          <Route path="/labs" element={<Labs />} />
+          <Route path="/tuiter" element={<Tuiter />} />
+          <Route path="/homescreen" element={<HomeScreen />} />
+        </Routes>
+        <footer/>
+      </div>
+    </BrowserRouter>
   );
 }
 export default App;
