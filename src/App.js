@@ -4,8 +4,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Labs from "./components/Labs/index.js";
 import HomeScreen from './components/Tuiter/HomeScreen/HomeScreen.js';
 import Tuiter from "./components/Tuiter/index.js";
-import "./vendors/bootstrap/css/bootstrap.min.css";
-import "./vendors/fontawesome/css/all.min.css";
+// import "./vendors/bootstrap/css/bootstrap.min.css";
+// import "./vendors/fontawesome/css/all.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
