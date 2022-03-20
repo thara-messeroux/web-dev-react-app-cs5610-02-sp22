@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 // import HelloWorld from "./components/HelloWorld";
 import Labs from "./components/Labs/index.js";
 import Tuiter from "./components/Tuiter/index.js";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import HelloWorld from "./components/HelloWorld.js";
 import ExploreScreen from "./components/Tuiter/ExploreScreen/ExploreScreen.js";
 import ProfileScreen from "./components/Tuiter/ProfileScreen/ProfileScreen.js";
