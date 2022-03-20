@@ -35,7 +35,7 @@ function App() {
               <Route path="tuiter" element={<Tuiter />}>
                 <Route index element={<HomeScreen />} />
                 <Route path="explore" element={<ExploreScreen />} />
-                <Route path="profile" element={<ProfileScreen />} />
+                <Route path="profiles" element={<ProfileScreen />} />
               </Route>
             </Route>
           </Routes>

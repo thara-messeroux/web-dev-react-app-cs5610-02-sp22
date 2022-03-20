@@ -34,7 +34,7 @@ const ProfileComponent = () => {
                     </div>
                 </div>
                 <div className="row mt-2 pro-pics">
-                    <img className="banner-pic img-prof" src={theInfo.bannerPicture}></img>
+                    <img className="banner-pic img-prof" src={theInfo.profilePicture}></img>
                     {/* <img className="avatar-pic story-img" src={theInfo.profilePicture}></img> */}
                     
                 </div>
