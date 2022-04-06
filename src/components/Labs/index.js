@@ -6,18 +6,20 @@ import ReduxExamples from "./redux-examples";
 import Styles from "./Styles";
 import TodoItem from "./Todo/TodoItem";
 import TodoList from "./Todo/TodoList";
+import TuitList from "../Tuiter/TuitList/TuitList";
 
 const Labs = () => {
   return (
     <>
       <h1>Labs</h1>
       {/* <TodoItem/> */}
+      <TuitList/>
       <TodoList/>
       <ConditionalOutput/>
       <Styles/>
       <Classes/>
       <ReduxExamples/>
-      <Link to="/homescreen">Homescreen</Link> |<Link to="/tuiter">Tuiter</Link>
+      <Link to="/tuiter/profiles">Profile</Link> |<Link to="/tuiter">Tuiter</Link>
     </>
   );
 };

@@ -19,8 +19,9 @@ import who from "./components/Tuiter/reducers/who";
 import tuits from "./components/Tuiter/reducers/tuits";
 import ProfileInfo from "./components/Tuiter/reducers/profile";
 import HomeScreen from "./components/Tuiter/HomeScreen/index.js";
+import tuitsReducer from "./components/Tuiter/reducers/tuits-reducer";
 
-const reducers = combineReducers({ who, tuits, ProfileInfo });
+const reducers = combineReducers({ who, tuits, ProfileInfo, tuitsReducer });
 const store = createStore(reducers);
 
 function App() {
