@@ -20,6 +20,7 @@ import tuits from "./components/Tuiter/reducers/tuits";
 import ProfileInfo from "./components/Tuiter/reducers/profile";
 import HomeScreen from "./components/Tuiter/HomeScreen/index.js";
 import tuitsReducer from "./components/Tuiter/reducers/tuits-reducer";
+import Register from "./pages/Register";
 
 const reducers = combineReducers({ who, tuits, ProfileInfo, tuitsReducer });
 const store = createStore(reducers);
@@ -32,6 +33,7 @@ function App() {
           <Routes>
             <Route path="/">
               <Route index element={<Labs />} />
+              <Route path="register" element={<Register />} />
               <Route path="hello" element={<HelloWorld />} />
               <Route path="tuiter" element={<Tuiter />}>
                 <Route index element={<HomeScreen />} />
